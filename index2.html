@@ -4,70 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bibliotēka</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS file -->
+    <script src="strad.js" defer></script> <!-- Link to your JavaScript file -->
 </head>
 <body>
-    <header>
-        <nav>
-          <ul>
+  <header>
+    <nav>
+      <!-- <h1>Bibliotēka</h1> -->
+        <ul>
             <li><a href="home.html">Home</a>
                 <ul>
                     <li><a href="#">Dogpūls</a></li>
                     <li><a href="#">Skubijs Dū</a></li>
                     <li><a href="#">Misters Pībodijs</a></li>
-                  </ul>
-                </li>
+                </ul>
+            </li>
             <li><a href="about.html">About</a>
-              <ul>
-                <li><a href="#">kas tas ir</a></li>
-                <li><a href="#">kas tu esi</a></li>
-                <li><a href="#">chauu</a></li>
-              </ul>
+                <ul>
+                    <li><a href="#">kas tas ir</a></li>
+                    <li><a href="#">kas tu esi</a></li>
+                    <li><a href="#">chauu</a></li>
+                </ul>
             </li>
             <li><a href="contacts.html">Contact</a>
                 <ul>
                     <li><a href="#">Menedžrs</a></li>
                     <li><a href="#">Boss</a></li>
                     <li><a href="#">Lietvedis</a></li>
-                  </ul>
-                </li>
-          </ul>
-        </nav>
-      </header>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
 
-    <div class="flex-container">
-        <div>
-            <img src="https://i2-prod.gazettelive.co.uk/incoming/article29666327.ece/ALTERNATES/s1200c/0_Deadpool-Wolverine-Special-Screening-Hosted-by-Dogpool.jpg" class="bild">
-            <h1>Dogpūls</h1>
-            <p>Dogpūls ir supervaronis, kas parādās Marvel Comics izdotajos amerikāņu komiksos.</p>
-            <button class="poga"><span>Uzzināt vairāk </span></button>
-     
-            <!-- The Modal -->
-            <div id="myModal" class="modal">
 
-            <!-- Modal content -->
-            <div class="modal-content">
-              <span class="close">&times;</span>
-              <p>Some text in the Modal..</p>
+
+    <main>
+        <div class="flex-container">
+            <div>
+                <img src="https://i2-prod.gazettelive.co.uk/incoming/article29666327.ece/ALTERNATES/s1200c/0_Deadpool-Wolverine-Special-Screening-Hosted-by-Dogpool.jpg" class="bild" alt="Dogpūls">
+                <h1>Dogpūls</h1>
+                <p>Dogpūls ir supervaronis, kas parādās Marvel Comics izdotajos amerikāņu komiksos.</p>
+                <button id="myBtn1" class="poga"><span>Uzzināt vairāk</span></button>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <h2>Dogpūls</h2>
+                        <span class="close">&times;</span>
+                        <p>Dogpūls ir supervaronis, kas parādās Marvel Comics izdotajos amerikāņu komiksos. Viņš ir pazīstams ar savu humoru un neparasto pieeju cīņai ar ļaunumu.</p>
+                    </div>
+                </div>
             </div>
 
-             </div>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX-2C4grgUcdZIcnM2WMBlz5HZIjdiiZsUoA&s" class="bild" alt="Skubijs Dū">
+                <h1>Skubijs Dū</h1>
+                <p>"Skubijs Dū" ir 1969. gada ASV bērnu detektīvseriāls, komēdijseriāls un animācijas seriālu un filmu sērija.</p>
+                <button id="myBtn2" class="poga"><span>Uzzināt vairāk</span></button>
+                <div id="myModal2" class="modal">
+                    <div class="modal-content">
+                        <h2>Skubijs Dū</h2>
+                        <span class="close">&times;</span>
+                        <p>Skubijs Dū ir galvenais varonis, kas kopā ar saviem draugiem risina noslēpumus un atklāj ļaunus plānus. Viņš ir pazīstams ar savu nemierīgo dabu un mīlestību pret ēdienu.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <img src="https://static.wikia.nocookie.net/dreamworks/images/1/1f/Mr._Peabody_Profile.jpg/revision/latest?cb=20240225020140" class="bild" alt="Misters Pībodijs">
+                <h1>Misters Pībodijs</h1>
+                <p>Baigi gudrs suns, kurš izgudroja laika mašīnu.</p>
+                <button id="myBtn3" class="poga"><span>Uzzināt vairāk</span></button>
+                <div id="myModal3" class="modal">
+                    <div class="modal-content">
+                        <h2>Misters Pībodijs</h2>
+                        <span class="close">&times;</span>
+                        <p>Misters Pībodijs ir inteliģents suns, kurš ir pazīstams ar savām izgudrošanas spējām un laika ceļojumu piedzīvojumiem. Viņš izmanto savu laika mašīnu, lai atrisinātu dažādas problēmas.</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX-2C4grgUcdZIcnM2WMBlz5HZIjdiiZsUoA&s" class="bild">
-            <h1>Skubijs Dū</h1>
-            <p>"Skubijs Dū" ir 1969. gada ASV bērnu detektīvseriāls, komēdijseriāls un animācijas seriālu un filmu sērija.</p>
-            <button class="poga"><span>Uzzināt vairāk </span></button>
-        </div>
+        <!-- <aside>
+            <h2>Saistītie Raksti</h2>
+            <ul>
+                <li><a href="#">Raksts 1</a></li>
+                <li><a href="#">Raksts 2</a></li>
+                <li><a href="#">Raksts 3</a></li>
+            </ul>
+        </aside> -->
+    </main>
 
-        <div>
-            <img src="https://static.wikia.nocookie.net/dreamworks/images/1/1f/Mr._Peabody_Profile.jpg/revision/latest?cb=20240225020140" class="bild">
-            <h1>Misters Pībodijs</h1>
-            <p>Baigi gudrs suns, kurš izgudroja laika mašīnu.</p>
-            <button class="poga"><span>Uzzināt vairāk </span></button>
-        </div>
-    </div>
+    <footer>
+        <p>&copy; 2024 Bibliotēka. Visas tiesības aizsargātas.</p>
+        <p>Sekojiet mums: 
+            <a href="#">Facebook</a> | 
+            <a href="#">Twitter</a> | 
+            <a href="#">Instagram</a>
+        </p>
+    </footer>
+</body>
+</html>
+
+
+
 
 
 
@@ -77,24 +116,4 @@
 
 
     
-    <!-- <main>
-        <h1>Suns</h1>
-        <p>Suns jeb mājas suns ir suņu dzimtas plēsējs, kas ir viena no pelēkā vilka pasugām. Cilvēks pieradināja vienu no pelēkā vilka pasugām apmēram pirms 15 000 gadu Centrālāzijā. Mājas suns ir kļuvis par vienu no populārākajiem un visvairāk izmantotajiem mājdzīvniekiem cilvēces vēsturē.</p>
-        <img src="https://th.bing.com/th/id/R.b72e21ff61c90e80bd2ca06d07cce539?rik=6YV21xOLRmB4eA&pid=ImgRaw&r=0" width="800" height="600">
-    </main> -->
-
-    <!--    
-        <h2>Raksti</h2>
-        <ul>
-            <li><a href="#">Suņa labākais draugs</a></li>
-            <li><a href="#">Suņa mīļākais ēdiens</a></li>
-            <li><a href="#">Kāpēc suņi ir labi? </a></li>
-        </ul>
-   
-
-    <footer>
-        <p>&copy; 2024 manas autortiesības.</p>
-    </footer> 
-</body>
-</html>
 

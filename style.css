@@ -177,8 +177,8 @@ header nav {
   background-color: #e2a5e7;
 }
 
-
-/* The Modal (background) */
+/* MODAL */
+/* Modal container */
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -188,31 +188,159 @@ header nav {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: rgba(255, 192, 203, 0.7); /* Pink background with opacity */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  animation: fadeIn 0.5s; /* Fade in animation */
 }
 
-/* Modal Content/Box */
+/* Modal content */
 .modal-content {
-  background-color: #fefefe;
+  background-color: #fff; /* White background */
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
-  border: 1px solid #888;
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 10px; /* Rounded corners */
   width: 80%; /* Could be more or less, depending on screen size */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
 }
 
-/* The Close Button */
+/* Close button */
 .close {
-  color: #aaa;
+  color: #aaa; /* Light gray text */
   float: right;
   font-size: 28px;
   font-weight: bold;
+  transition: color 0.2s; /* Transition effect */
 }
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: #777; /* Dark gray text on hover */
   text-decoration: none;
   cursor: pointer;
 }
+
+/* Keep your previous button styles */
+.poga {
+  background-color: #e76ee1; /* Green */
+  border: 2px solid rgb(80, 0, 76);
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: background-color 0.2s; /* Transition effect */
+}
+
+.poga span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.poga span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.poga:hover span {
+  padding-right: 25px;
+}
+
+.poga:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
+.poga:hover {
+  animation: zoom-in 0.5s, color-change 0.5s;
+}
+ /* KEYFRANES */
+@keyframes zoom-in {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes color-change {
+  0% {
+    background-color: #e76ee1;
+  }
+  100% {
+    background-color: #ff99cc;
+  }
+}
+
+.bild {
+  transition: transform 0.5s;
+}
+
+.bild:hover {
+  animation: zoom-in 0.5s;
+}
+
+@keyframes zoom-in {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+
+/* Footer styling */
+footer {
+  background-color: #e2a5e7; /* Footer background color */
+  color: #000; /* Text color */
+  text-align: center; /* Center the text */
+  padding: 20px 0; /* Vertical padding for footer */
+  position: relative; /* Ensure footer stays in place */
+  bottom: 0; /* Position at the bottom */
+  width: 100%; /* Full width */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+}
+
+/* Footer links */
+footer a {
+  color: #000; /* Link color */
+  text-decoration: none; /* Remove underline */
+  margin: 0 10px; /* Horizontal space between links */
+}
+
+/* Hover effect for footer links */
+footer a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+
+
+
+
+
+
+
+
+
 
