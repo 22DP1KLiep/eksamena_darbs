@@ -3,7 +3,7 @@
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  background-color: rgba(226, 176, 255, 0.788);
+  background-image: url(https://images.unsplash.com/photo-1611521063806-b8be8b1b437a?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTF8fHxlbnwwfHx8fHw%3D);
   justify-content: center;
   min-height: 100vh; /* add this to cover the whole height */
   width: 100vw; /* add this to cover the whole width */
@@ -333,6 +333,35 @@ footer a {
 footer a:hover {
   text-decoration: underline; /* Underline on hover */
 }
+
+h3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2.5rem; /* Match the font size as needed */
+  color: #800080;
+  margin: 0;
+  padding: 40px;
+  background-color:#fecfff; /* The same pink background color */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.emoji {
+  font-size: 1.5rem; /* Same as before */
+  margin-bottom: 10px; /* Spacing between emoji and title */
+}
+
+.title {
+  font-family: 'Cinzel', serif; /* Vintage font */
+  font-size: 2.5rem; /* Match the title size */
+}
+
+
+
 
 
 
