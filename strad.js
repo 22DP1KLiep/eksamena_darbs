@@ -51,3 +51,19 @@ window.onclick = function(event) {
     modal3.style.display = "none";
   }
 }
+
+const darkModeToggle = document.getElementById('dark-mode-toggle');
+
+darkModeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+});
+
+const hamburger = document.querySelector('.hamburger');
+const navUl = document.querySelector('nav ul');
+
+hamburger.addEventListener('click', function() {
+  this.classList.toggle('active');
+  navUl.classList.toggle('active');
+});
+
+

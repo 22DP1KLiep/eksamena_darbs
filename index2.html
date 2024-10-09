@@ -8,34 +8,42 @@
     <script src="strad.js" defer></script> <!-- Link to your JavaScript file -->
 </head>
 <body>
-  <header>
-    <nav>
-      <!-- <h1>Bibliotēka</h1> -->
-        <ul>
+    <header>
+        <nav>
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul>
             <li><a href="home.html">Home</a>
-                <ul>
-                    <li><a href="#">Dogpūls</a></li>
-                    <li><a href="#">Skubijs Dū</a></li>
-                    <li><a href="#">Misters Pībodijs</a></li>
-                </ul>
+              <ul class="dropdown">
+                <li><a href="#">Dogpūls</a></li>
+                <li><a href="#">Skubijs Dū</a></li>
+                <li><a href="#">Misters Pībodijs</a></li>
+              </ul>
             </li>
             <li><a href="about.html">About</a>
-                <ul>
-                    <li><a href="#">Par suņiem</a></li>
-                    <li><a href="#">Par mums</a></li>
-                    <li><a href="#">Par šo mājaslapu</a></li>
-                </ul>
+              <ul class="dropdown">
+                <li><a href="#">Par suņiem</a></li>
+                <li><a href="#">Par mums</a></li>
+                <li><a href="#">Par šo mājaslapu</a></li>
+              </ul>
             </li>
             <li><a href="contacts.html">Contact</a>
-                <ul>
-                    <li><a href="#">Menedžrs</a></li>
-                    <li><a href="#">Boss</a></li>
-                    <li><a href="#">Lietvedis</a></li>
-                </ul>
+              <ul class="dropdown">
+                <li><a href="#">Menedžrs</a></li>
+                <li><a href="#">Boss</a></li>
+                <li><a href="#">Lietvedis</a></li>
+              </ul>
             </li>
-        </ul>
-    </nav>
-</header>
+          </ul>
+          <div class="dark-mode-switch">
+            <input type="checkbox" id="dark-mode-toggle" />
+            <label class="slider round" for="dark-mode-toggle"></label>
+          </div>
+        </nav>
+      </header>
 
 
 
