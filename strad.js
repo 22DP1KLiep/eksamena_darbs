@@ -58,12 +58,24 @@ darkModeToggle.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
 });
 
-const hamburger = document.querySelector('.hamburger');
-const navUl = document.querySelector('nav ul');
 
-hamburger.addEventListener('click', function() {
-  this.classList.toggle('active');
-  navUl.classList.toggle('active');
+// HAMBURGER
+// Selecting the hamburger icon and the navigation menu
+// Select the hamburger icon and the navigation menu
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('nav ul');
+
+hamburger.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+  hamburger.classList.toggle('active');
 });
+
+document.addEventListener('click', (e) => {
+  if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+    navMenu.classList.remove('active');
+    hamburger.classList.remove('active');
+  }
+});
+
 
 
