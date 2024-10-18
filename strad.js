@@ -78,6 +78,62 @@ document.addEventListener('click', (e) => {
 });
 
 
+function loadNavbar() {
+  const navbarHTML = `
+  <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS file -->
+
+  <header>
+  <nav>
+    
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul>
+      <li><a href="#">Home</a>
+        <!-- <ul class="dropdown">
+          <li><a href="#">Dogpūls</a></li>
+          <li><a href="#">Skubijs Dū</a></li>
+          <li><a href="#">Misters Pībodijs</a></li>
+        </ul> -->
+      </li>
+      <li><a href="#">About</a>
+        <ul class="dropdown">
+          <li><a href="AboutDogs.html">Par suņiem</a></li>
+          <li><a href="AboutUs.html">Par mums</a></li>
+          <li><a href="AboutWeb.html">Par šo mājaslapu</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Contact</a>
+        <!-- <ul class="dropdown">
+          <li><a href="#">Menedžrs</a></li>
+          <li><a href="#">Boss</a></li>
+          <li><a href="#">Lietvedis</a></li>
+        </ul> -->
+      </li>
+
+      
+    </ul>
+   
+    <div class="dark-mode-switch">
+      <input type="checkbox" id="dark-mode-toggle" />
+      <label class="slider round" for="dark-mode-toggle"></label>
+    </div>
+    
+  </nav>
+</header>
+  `;
+  document.body.insertAdjacentHTML('afterbegin', navbarHTML);
+}
+
+// Call the function to load the navbar
+loadNavbar();
+
+
+
+
+
 
 
 

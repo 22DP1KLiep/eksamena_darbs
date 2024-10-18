@@ -615,58 +615,7 @@ nav a {
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* SEARCH BAR */
-.search-bar {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  
-  border-radius: 5px;
-  
-  width: 300px;
-  margin-right: 20px;
-}
 
-.search-bar input[type="search"] {
-  width: 80%;
-  padding: 10px;
-  border: none;
-  border-radius: 10px;
-  font-size: 16px;
-}
-
-.search-bar button {
-  width: 60px;
-  padding: 10px;
-  border: none;
-  border-radius: 10px;
-  background-color: #7a2460;
-  color: #fff;
-  cursor: pointer;
-  margin-left: 5px;
-}
-
-.search-bar button:hover {
-  background-color: #bb8dd1;
-}
-
-
-/* DARK MODE SEARCH BAR */
-
-
-.dark-mode .search-bar input[type="search"] {
-  background-color: #333;
-  color: #fff;
-}
-
-.dark-mode .search-bar button {
-  background-color: #666;
-  color: #fff;
-}
-
-.dark-mode .search-bar button:hover {
-  background-color: #777;
-}
 
 
 
